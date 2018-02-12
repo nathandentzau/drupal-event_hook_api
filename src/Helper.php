@@ -9,7 +9,7 @@ final class Helper {
   }
 
   public static function moduleNameFromNamespace($namespace) {
-    if (preg_match('/^Drupal\\\\(\w+)\\\\.+$/', $namespace, $matches) === 0) {
+    if (preg_match('/^Drupal\\\\(\w+)\\\\.+$/', $namespace, $matches) !== 0) {
       return NULL;
     }
 
